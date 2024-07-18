@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; 
+            /*Medidas Absolutas
+            cm, mm, in(polegada), px, pt(ponto) ,pc(paica)
+            
+            Medídas Relativas
+            em, ex, rem, vw(tamanho da tela), vh, %
+            16px geralmente é igual a 1em >> Recomendação oficial.
+            */
+            font-size: 16px;
+            font-weight: 800;
+            font-style: italic;
+            /*weight (peso), width (largura), heigth (altura)*/
+            /*lighter, normal, bold, bolder são os pesos que tem disponivel, também pode usar numeração de 100 a 900*/
+        }
+        h1 {
+            /* shorthand font
+            font-style -> font-weight -> font-size -> font-family
+            pode substituir a de baixo
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            */
+            font: italic bold 2em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cumque voluptatibus, aliquid inventore itaque quia ratione perspiciatis dolor autem! Asperiores, excepturi sed accusamus accusantium quasi deleniti reprehenderit atque error quos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum, earum quibusdam, pariatur consectetur illum mollitia amet saepe rerum ipsam modi incidunt necessitatibus veniam quas. Alias consectetur veniam tenetur odit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum porro recusandae repudiandae repellendus, consequatur quaerat vero possimus laboriosam, illo libero ducimus magni nam saepe esse dignissimos delectus ipsam vel tenetur.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse síte em vários dispositivos diferentes ou simplesmente aumente ou díminua o tamanho do navegador.</p>
+    <picture> <!--Usando o source dentro com media pode se limita o tamanho para mudar as imagens automático para adaptar os tamanhos para as telas-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível"><!--Sempre usar na ordem decrescente ou crescente se não, vai dar erro.-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reporduzir áudio em HTML5.</p>
+    <audio src="midia/night-shift-national-sweetheart.mp3" controls autoplay loop></audio>
+    <audio preload="metadata" autoplay controls loop><!--o preload serve para colocar, tocar o áudio na hora, quando apenas carrega algumas informações e quando clica apenas-->
+        <!--Arquivos wav são extremamente pesado e o a tag "loop" serve para o áudio retoca quando acabar-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

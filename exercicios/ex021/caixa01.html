@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: antiquewhite;
+            height: 300px;
+            width: 300px;
+            
+            border-radius: 10px;
+            box-shadow: 10px 10px #7262d8e0;
+
+            /*em vez de usar
+             padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            podemos usar o shorthand que é o codigo simplificado na ordem a cima*/
+            padding: 10px; /* como os quatros (4) lados são iguais do mesmo tamanho 10px pode colocar apenas uma vez que vai ser automático*/
+           
+            /*em vez de usar 
+            border-width: 10px;
+            border-style: solid;
+            border-color: #483d8b;
+            pode se usar shorthand que é o codigo simplificado igual a baixo:
+            */
+            border: 10px solid #483d8b;
+
+            margin: 20px auto 50px auto;
+            /*novamente pode usar shorthand ao invés de  margin-top: 20px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            */
+
+            outline: 5px dashed aqua;
+            /*mais um shorthand
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: aqua;
+            */
+        }
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: #ff0000;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            box-shadow: 10px 10px #f73636;
+        }
+    </style>
+</head>
+<body>
+   <h1>Exemplo de caixa box-level</h1>
+   <p>Parágrafos também são exemplos de box-level, mas os <a href="a">links são exemplos de caixas inlíne-level</a>. Vamos ver como tudo isso funciona.</p> 
+</body>
+</html>
